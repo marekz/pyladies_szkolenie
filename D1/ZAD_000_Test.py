@@ -1,0 +1,17 @@
+# print("Nasz wiek :) " + "99");
+# print(10 + 2);
+# print(1 + 1.11);
+# print(101.00001 % 99);
+# print(101.00001 + 99);
+# print(101.00001 / 99);
+# print(2 ** 16);
+# print("\"fajne stringi\"");
+# print("ma " * 2);
+# print('Na' * 20 + 'Batman');
+# print('Aa' * 10);
+# print("Nowy film Ama'deusza pt \"xyz\"");
+# print("A\\A' == A\\A\"");
+# input("Podaj rozmiar swojego buta: ");
+# print('Lubię jeść: ' + input('co lubisz jeść?'));
+# print(input("Ile liter ma twoje imie? ") * 5);
+print("Twoje BMI: " + str(int(input("Twoja waga: ")) / (int(input("Twój wzrost: ")) ** 2)));
