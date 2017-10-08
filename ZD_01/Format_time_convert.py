@@ -36,14 +36,21 @@ def getTime(dataString, method):
     elif method == 'm':
         message = "Podany format zawiera {0} minut".format(seconds/60)
     elif method == 'g':
-        message = "Podany format zawiera {0} godzin".format(seconds / 60 * 60)
+        message = "Podany format zawiera {0} godzin".format(seconds / 3600)
     else: message = "Zły wybór"
 
     return message
 
+again = True
+while again:
 
-time            = input("Wprowadź jednostkę czasu do przeliczenia w powyższych przykładów: ")
-print("Wprowadź jednostkę do której chcesz przeliczyć [s]: sekunda, [m]: minuta, [h]: godzina")
-calculateTo     = input("Wybór: ")
 
-print(getTime(time, calculateTo))
+    time            = input("Wprowadź jednostkę czasu do przeliczenia w powyższych przykładów: ")
+    print("Wprowadź jednostkę do której chcesz przeliczyć [s]: sekunda, [m]: minuta, [h]: godzina")
+    calculateTo     = input("Wybór: ")
+
+    print(getTime(time, calculateTo))
+
+    askAgain = input("Czy raz jeszcze? [T/N]")
+    if askAgain == "N":
+        again = False
