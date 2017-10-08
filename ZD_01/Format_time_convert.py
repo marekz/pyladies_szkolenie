@@ -35,7 +35,7 @@ def getTime(dataString, method):
         message = "Podany format zawiera {0} sekund".format(seconds)
     elif method == 'm':
         message = "Podany format zawiera {0} minut".format(seconds/60)
-    elif method == 'g':
+    elif method == 'h':
         message = "Podany format zawiera {0} godzin".format(seconds / 3600)
     else: message = "Zły wybór"
 
@@ -54,3 +54,5 @@ while again:
     askAgain = input("Czy raz jeszcze? [T/N]")
     if askAgain == "N":
         again = False
+
+# TODO: Pobawić się w wyjątki
