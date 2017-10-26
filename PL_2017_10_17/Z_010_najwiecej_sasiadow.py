@@ -5,14 +5,14 @@ from countries import *
 def showParameters():
 
     number_of_borders = 0
-    selected_country = ''
+    selected_country = ""
 
     for element in countries:
-        if len(element['borders']) > number_of_borders:
-            selected_country = element['name']['official']
-            number_of_borders = len(element['borders'])
-            name_borders = element['borders']
+        if len(element["borders"]) > number_of_borders:
+            selected_country = element["name"]["official"]
+            number_of_borders = len(element["borders"])
+            name_borders = element["borders"]
 
-    print('''Kraj o nwjwiększej liczbie sąsiadów to: {0}. {0} ma {1} sąsiadów. Sąsiedzi to: {2}'''. format(selected_country, number_of_borders, name_borders))
+    print("""Kraj o nwjwiększej liczbie sąsiadów to: {0}. {0} ma {1} sąsiadów. Sąsiedzi to: {2}""". format(selected_country, number_of_borders, name_borders))
 
 showParameters()

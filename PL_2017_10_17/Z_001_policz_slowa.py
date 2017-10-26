@@ -3,7 +3,7 @@
 def policz_slowa(zdanie):
     liczba_elementow = 1
     for letter in zdanie:
-        if letter == ' ':
+        if letter == " ":
             liczba_elementow = liczba_elementow + 1
     return liczba_elementow
 

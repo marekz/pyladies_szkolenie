@@ -4,7 +4,7 @@ from builtins import print
 
 def cenzura_cyfr(slowo):
 
-    hash_znak = ''
+    hash_znak = ""
 
     for znak in slowo:
         try:

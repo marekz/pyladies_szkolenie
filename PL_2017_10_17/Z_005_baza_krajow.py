@@ -5,7 +5,7 @@ from countries import *
 def showCountries(subregion):
 
     for element in countries:
-        if element['subregion'] == subregion:
-            print(element['name']['official'])
+        if element["subregion"] == subregion:
+            print(element["name"]["official"])
 
 showCountries("Northern America")

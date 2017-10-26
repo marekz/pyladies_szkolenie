@@ -6,10 +6,10 @@ def showCountries():
 
     for element in countries:
 
-        capital = element['capital']
+        capital = element["capital"]
 
         if len(capital):
             if capital[0] == "W":
-                print(element['name']['official'])
+                print(element["name"]["official"])
 
 showCountries()

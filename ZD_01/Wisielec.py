@@ -1,9 +1,9 @@
 from random import randint
 #TODO: Podzielić na funkcje, w kolejnym kroku powalczyć z kalsami
 # Lista słów
-listaSlow = ['kaszmir', 'kalisz', 'rabarbar', 'trabant', 'kozak', 'grzechotka', 'szczecin', 'wieloryb', 'matematyka',
-             'śwetlik', 'samochód', 'motocyklista', 'nocnik', 'wachacz', 'wąsacz', 'literat', 'perkusja', 'radość',
-             'przyjemność', 'łącznik', 'piórnik', 'marketer', 'ciągnik', 'rumcajs', 'żyrafa', 'krokodyl', 'kameleon']
+listaSlow = ["kaszmir", "kalisz", "rabarbar", "trabant", "kozak", "grzechotka", "szczecin", "wieloryb", "matematyka",
+             "śwetlik", "samochód", "motocyklista", "nocnik", "wachacz", "wąsacz", "literat", "perkusja", "radość",
+             "przyjemność", "łącznik", "piórnik", "marketer", "ciągnik", "rumcajs", "żyrafa", "krokodyl", "kameleon"]
 
 # Pobranie liczby słów z listy
 listaSlowLength = len(listaSlow)

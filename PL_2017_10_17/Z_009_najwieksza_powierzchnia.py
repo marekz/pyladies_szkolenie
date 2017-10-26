@@ -6,11 +6,11 @@ def biggest_country():
     tmp_area = 0
 
     for element in countries:
-        tmp_area = element['area']
+        tmp_area = element["area"]
 
         if tmp_area > max_area:
             max_area = tmp_area
-            biggest_country = element['name']['official']
+            biggest_country = element["name"]["official"]
 
         data = [biggest_country, max_area]
 
