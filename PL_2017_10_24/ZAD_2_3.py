@@ -31,13 +31,21 @@ def create_data_slo():
         color = element[element.find('has') + 4:element.find('and')].strip()
         slo[color].append(height)
 
-def calculate_avarege():
+def calculate_and_save_to_file_avarege():
+    newFile = "Avarage_height.txt"
+    mode = "a"
+
+    openTOWrite = open(newFile, mode)
+
+
     for element in slo:
         lElementow = len(slo[element])
         suma = 0
         for num in slo[element]:
             suma = suma + int(num)
         srednia = suma / lElementow
+
+        openTOWrite.write("Średni wzrost osób z kolorem oczu {0} wynosi {1} cm\n".format(element, srednia))
         print("Średni wzrost osób z kolorem oczu {0} wynosi {1} cm".format(element, srednia))
 
 
@@ -47,7 +55,7 @@ create_slo()
 #   tworzenie wielowymiarowej tablicy z element['kolor oczu']['wzrosty osob']
 create_data_slo()
 #Operacja obliczenia średniej dla każdego koloru oczu
-calculate_avarege()
+calculate_and_save_to_file_avarege()
 
 
 
