@@ -1,14 +1,14 @@
-Średni wzrost osób z kolorem oczu  wynosi 177.0 cm
-Średni wzrost osób z kolorem oczu gold wynosi 191.0 cm
-Średni wzrost osób z kolorem oczu yellow wynosi 177.8181818181818 cm
-Średni wzrost osób z kolorem oczu orange wynosi 180.5 cm
-Średni wzrost osób z kolorem oczu brown wynosi 164.35294117647058 cm
-Średni wzrost osób z kolorem oczu red wynosi 154.8 cm
-Średni wzrost osób z kolorem oczu pink wynosi 180.0 cm
-Średni wzrost osób z kolorem oczu hazel wynosi 174.0 cm
-Średni wzrost osób z kolorem oczu unknown wynosi 136.0 cm
-Średni wzrost osób z kolorem oczu black wynosi 182.375 cm
-Średni wzrost osób z kolorem oczu red, blue wynosi 96.0 cm
-Średni wzrost osób z kolorem oczu blue wynosi 179.33333333333334 cm
-Średni wzrost osób z kolorem oczu blue-gray wynosi 182.0 cm
-Średni wzrost osób z kolorem oczu green, yellow wynosi 216.0 cm
+Średni wzrost osób z kolorem oczu Brak wynosi 177.0 cm
+Średni wzrost osób z kolorem oczu żółty wynosi 177.8181818181818 cm
+Średni wzrost osób z kolorem oczu różowy wynosi 180.0 cm
+Średni wzrost osób z kolorem oczu brązowy wynosi 164.35294117647058 cm
+Średni wzrost osób z kolorem oczu Czerwone i niebieskie wynosi 96.0 cm
+Średni wzrost osób z kolorem oczu niebiesko-szary wynosi 182.0 cm
+Średni wzrost osób z kolorem oczu piwny wynosi 174.0 cm
+Średni wzrost osób z kolorem oczu zielony i żółty wynosi 216.0 cm
+Średni wzrost osób z kolorem oczu nieznany wynosi 136.0 cm
+Średni wzrost osób z kolorem oczu niebieski wynosi 179.33333333333334 cm
+Średni wzrost osób z kolorem oczu czarny wynosi 182.375 cm
+Średni wzrost osób z kolorem oczu czerwony wynosi 154.8 cm
+Średni wzrost osób z kolorem oczu złoty wynosi 191.0 cm
+Średni wzrost osób z kolorem oczu pomarańczowy wynosi 180.5 cm
