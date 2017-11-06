@@ -1,0 +1,18 @@
+Light freighter kosztuje 100000 credits.
+assault starfighter kosztuje 134999 credits.
+Starfighter kosztuje 149999 credits.
+Starfighter kosztuje 175000 credits.
+Assault Starfighter kosztuje 220000 credits.
+landing craft kosztuje 240000 credits.
+Armed government transport kosztuje 240000 credits.
+corvette kosztuje 3500000 credits.
+Escort ship kosztuje 8500000 credits.
+Star Cruiser kosztuje 104000000 credits.
+Star Destroyer kosztuje 150000000 credits.
+Star dreadnought kosztuje 1143350000 credits.
+Deep Space Mobile Battlestation kosztuje 1000000000000 credits.
+Starfighter kosztuje unknown credits.
+Medium transport kosztuje unknown credits.
+Patrol craft kosztuje unknown credits.
+Space cruiser kosztuje unknown credits.
+Droid control ship kosztuje unknown credits.

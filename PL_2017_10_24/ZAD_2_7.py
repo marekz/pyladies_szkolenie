@@ -24,5 +24,10 @@ sortedCrafts = sorted(toSorted, key=lambda ship : ship['cost'])
 
 allCrafts = sortedCrafts + unknown
 
+newFile = "SortedShip.txt"
+mode = "w"
+
+openTOWrite = open(newFile, mode)
+
 for element in allCrafts:
-    print('{0} kosztuje {1} credits.'.format(element['nazwa'],element['cost']))
+    openTOWrite.write('{0} kosztuje {1} credits.\n'.format(element['nazwa'],element['cost']))
