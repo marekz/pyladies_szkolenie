@@ -9,17 +9,17 @@ error_log = []
 
 species_list = []
 
-def calculateBMI(pilot):
+def calculateBMI(height, mass):
+    bmi = int(mass)/((int(height) / 100) ** 2)
+    return bmi
 
-    print("Imię: {0}, Wysokość: {1}, Waga: {2}".format(pilot['name'], pilot['height'], pilot['mass']))
-    # species = getRequest(species[0])
-    #
-    # if species['name'] not in species_list:
-    #     species_list.append(species['name'])
+def displayPilot(pilot):
+    bmi = calculateBMI(pilot['height'], pilot['mass'])
+    print("{0}, wzrost: {1}, masa {2}, BMI: {3}".format(pilot['name'], pilot['height'], pilot['mass'], bmi))
 
 def showPilot(url):
     pilot = getRequest(url)
-    calculateBMI(pilot)
+    displayPilot(pilot)
 
 def iterateParts(results):
     for element in results:
@@ -48,7 +48,3 @@ def getRequest(url):
     return data
 
 api_swapi = getRequest(url)
-
-# print("Rasy występujące w V części Gwiezdnych Wojen: ")
-# for elemement in species_list:
-#     print(elemement)
