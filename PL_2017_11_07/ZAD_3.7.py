@@ -1,4 +1,4 @@
-# Korzystając z API https://swapi.co/api/. Pobierz dane wszystkich mieszkańców planety Tatooin
+# Korzystając z API https://swapi.co/api/. Pobierz dane wszystkich mieszkańców planety Tatooine
 
 # GET /api/
 #
@@ -16,26 +16,45 @@
 #     "starships": "https://swapi.co/api/starships/"
 # }
 
-
-
 import requests
-
-
-url = 'https://swapi.co/api/'
-resp = requests.get(url)
-
-api_swapi = resp.json()
-
-url_api_people = api_swapi['people']
-
-resp = requests.get(url_api_people)
-data_people = resp.json()
-
 from pprint import pprint as pp
 
-pp(data_people['next'])
-pp(data_people['results'])
-pp(data_people)
+url = 'https://swapi.co/api/'
 
+inhabitant_data = []
+nextRecord = ''
+error_log = []
 
-# print(api_people)
+def getHomeworld(url):
+    return getRequest(url);
+
+def iterateResult(results):
+    for element in results:
+        name = element['name']
+        homeworld = getHomeworld(element['homeworld'])
+        if homeworld['name'] == 'Tatooine':
+            inhabitant_data.append(element)
+
+def getRequest(url):
+    resp = requests.get(url)
+    data = resp.json()
+
+    try:
+        if data['results']:
+            results = data['results']
+            iterateResult(results)
+    except KeyError:
+        error_log.append("Brak pola result")
+
+    try:
+        if data['next']:
+            getRequest(data['next'])
+    except KeyError:
+        error_log.append("Brak następnego rekordu")
+
+    return data
+
+api_swapi = getRequest(url)
+data_people = getRequest(api_swapi['people'])
+
+pp(inhabitant_data)
