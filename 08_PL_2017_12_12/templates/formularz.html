@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Formularz</title>
+</head>
+<body>
+    {% if query %}
+        Przesłano {{ query }}
+    {% endif %}
+    <form action="/search" method="POST">
+        <input type="text" name="query">
+        <button type="submit">Wyślij</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Zespoły</title>
+</head>
+<body>
+    <h1>{{ naglowek }}</h1>
+    <ol>
+        {% for zespol in zespoly %}
+            <li>{{ zespol }}</li>
+        {% endfor %}
+    </ol>
+
+    {% if link %}
+        <a href="//pylove.org">PyLove</a>
+    {% endif %}
+</body>
+</html>

@@ -4,7 +4,7 @@
 import requests
 from pprint import pprint as pp
 
-url = 'https://swapi.co/api/people/'
+url = 'https://swapi.co/api/people/?format=wookiee'
 
 inhabitant_data = []
 nextRecord = ''
@@ -31,23 +31,28 @@ def iterateResult(results):
 
 def getRequest(url):
     resp = requests.get(url)
-    data = resp.json()
+    data = resp.iter_content()
+    # pp(data)
+
+    for element in data:
+        print(element)
+
 
     # pp(data)
-    try:
-        if data['results']:
-            results = data['results']
-            iterateResult(results)
-    except KeyError:
-        error_log.append("Brak pola result")
-
-    try:
-        if data['next']:
-            getRequest(data['next'])
-    except KeyError:
-        error_log.append("Brak następnego rekordu")
-
-    return data
+    # try:
+    #     if data['results']:
+    #         results = data['results']
+    #         iterateResult(results)
+    # except KeyError:
+    #     error_log.append("Brak pola result")
+    #
+    # try:
+    #     if data['next']:
+    #         getRequest(data['next'])
+    # except KeyError:
+    #     error_log.append("Brak następnego rekordu")
+    #
+    # return data
 
 api_swapi = getRequest(url)
 # data_people = getRequest(api_swapi['people'])
